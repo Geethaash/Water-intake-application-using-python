@@ -1,0 +1,30 @@
+{% extends 'layout/layout.html'%}
+{% block title %}Home - Daily Water Intake{% endblock %}
+
+{% block 'content' %}
+    <h2>Welcome, {{ user.username }}!</h2>
+
+    <p>Track your daily water intake and stay hydrated!</p>
+
+    <!-- <div>
+        <h3>Quick Links:</h3>
+        <ul>
+            <li><a href="{% url 'add_intake' %}">Add Your Water Intake</a></li>
+            <li><a href="{% url 'intake_history' %}">View Your Water Intake History</a></li>
+            <li><a href="{% url 'find_difference' %}">Find Water Intake Difference Between Dates</a></li>
+        </ul>
+    </div> -->
+
+    <!-- <div>
+        <h3>Your Latest Water Intake:</h3>
+        {% if latest_intake %}
+            <p>You last recorded {{ latest_intake.amount }} liters on {{ latest_intake.intake_date }}.</p>
+        {% else %}
+            <p>No water intake recorded for today yet. <a href="{% url 'add_intake' %}">Add your intake now!</a></p>
+        {% endif %}
+    </div>
+
+    <div>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div> -->
+{% endblock %}

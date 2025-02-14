@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {% block title%}
+        {% endblock %}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom, .footer-custom {
+            background-color: #483574; /* Change this to your preferred color */
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link,
+        .footer-custom p {
+            color: white;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #f8f9fa; /* Change this to your preferred hover color */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        #togbtn {
+            background-color: whitesmoke;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    {% include 'partials/navbar.html' %}
+    {% block 'content' %}
+    {% endblock %}
+<!-- Footer -->
+<footer class="footer-custom py-3 fixed-bottom">
+    <div class="container text-center">
+        <p>&copy; 2024 Track Your WaterIntake. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
