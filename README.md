@@ -10,4 +10,4 @@ and set personalized hydration goals.
 ## Technologies Used
 - Backend - Python,Django
 - DataBase - MySQL
-- User Authentication: Django's built-in authentication system
+- User Authentication - Django's built-in authentication system
